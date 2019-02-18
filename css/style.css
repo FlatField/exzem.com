@@ -6279,17 +6279,19 @@ button.bg-dark:focus {
 .py-4 {
   padding-top: 1.5rem !important; }
 
-.pr-4,
-.px-4 {
+.pr-4 {
   padding-right: 1.5rem !important; }
 
 .pb-4,
 .py-4 {
   padding-bottom: 1.5rem !important; }
 
-.pl-4,
-.px-4 {
+.pl-4 {
   padding-left: 1.5rem !important; }
+
+.px-4 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important; }
 
 .p-5 {
   padding: 3rem !important; }
@@ -7280,7 +7282,7 @@ body {
     width: 100%; }
 
 span {
-  color: #bfbfbf; }
+  color: #363636; }
 
 a {
   -webkit-transition: .3s all ease;
@@ -7309,11 +7311,11 @@ h1, h2, h3, h4, h5,
   right: 0;
   z-index: 3;
   padding: 0; }
-  @media (max-width: 991.98px) {
+  /* @media (max-width: 991.98px) {
     .ftco-navbar-light {
       background: #000 !important;
       position: relative;
-      top: 0; } }
+      top: 0; } } */
   .ftco-navbar-light .navbar-brand {
     color: #fff; }
     @media (min-width: 768px) {
@@ -7322,11 +7324,14 @@ h1, h2, h3, h4, h5,
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav {
       padding-top: 20px;
-      padding-bottom: 20px; } }
+      padding-bottom: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      padding-left: 25px; } }
   @media (max-width: 767.98px) {
     .ftco-navbar-light .navbar-nav {
       padding-left: 20px;
-      padding-right: 20px; } }
+      padding-right: 20px;
+      background: rgba(0, 0, 0, 0.8); } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 14px;
     padding-top: .7rem;
@@ -7343,7 +7348,7 @@ h1, h2, h3, h4, h5,
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 20px;
         padding-right: 20px;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(54, 54, 54, 0.8);
         letter-spacing: 1px; } }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover, .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus {
       color: #0BAFAF; }
@@ -7493,7 +7498,7 @@ h1, h2, h3, h4, h5,
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
       color: #fff;
-      background: #0BAFAF; }
+      background: #fff; }
       .ftco-navbar-light.scrolled .navbar-brand:after {
         border-color: #0BAFAF transparent transparent transparent; }
 
@@ -7501,13 +7506,13 @@ h1, h2, h3, h4, h5,
   font-size: 22px;
   display: block;
   font-weight: 800;
-  background: #0BAFAF;
+  background: rgba(255, 255, 255, 0.3);
   position: relative;
   text-transform: uppercase;
   letter-spacing: 3.5px;
   top: 0;
   left: 10px;}
-  .navbar-brand:after {
+  /* .navbar-brand:after {
     position: absolute;
     left: 0;
     right: 0;
@@ -7520,7 +7525,7 @@ h1, h2, h3, h4, h5,
     transform: translateY(100%);
     border-style: solid;
     border-width: 20px 63px 0 63px;
-    border-color: #0BAFAF transparent transparent transparent; }
+    border-color: #0BAFAF transparent transparent transparent; } */
 
 .owl-carousel {
   position: relative; }
@@ -7563,7 +7568,8 @@ h1, h2, h3, h4, h5,
   .owl-carousel.home-slider {
     position: relative;
     height: 750px;
-    z-index: 0; }
+    z-index: 0;
+    top : 57px;  }
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
       background-repeat: no-repeat;
@@ -7573,7 +7579,7 @@ h1, h2, h3, h4, h5,
       z-index: 0; }
       @media (max-width: 1199.98px) {
         .owl-carousel.home-slider .slider-item {
-          background-position: center center !important; } }
+          background-position: center center !important;} }
       .owl-carousel.home-slider .slider-item .overlay {
         position: absolute;
         top: 0;
@@ -7959,7 +7965,7 @@ h1, h2, h3, h4, h5,
     content: '';
     position: absolute;
     left: 0;
-    top: -40px;
+    top: 10px;
     overflow: visible;
     width: 50%;
     height: 80px;
@@ -7974,7 +7980,7 @@ h1, h2, h3, h4, h5,
     content: '';
     position: absolute;
     right: 0;
-    top: -40px;
+    top: 10px;
     overflow: visible;
     width: 50%;
     height: 80px;
@@ -8565,7 +8571,7 @@ textarea.form-control {
   position: relative; }
   @media (max-width: 767.98px) {
     /* .ftco-section {
-      padding: 6em 0; }*/ } 
+      padding: 6em 0; }*/ }
     /* ftcoの詳細をもっと見るがアクティブになったら外す */
 .ftco-bg-dark {
   background: #090808; }
