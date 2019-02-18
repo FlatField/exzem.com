@@ -8245,6 +8245,15 @@ h1, h2, h3, h4, h5,
     .table tbody tr td.color-5 {
       background: #a287f4; }
 
+
+/* google form */
+div.freebirdFormviewerViewFormCard {
+  background: linear-gradient(45deg, #0080ff 0%, #0BAFAF 100%)!important;}
+
+div.freebirdSolidBackground {
+  display: none !important;}
+
+
 .ftco-appointment {
   width: 100%;
   position: relative;
@@ -8268,9 +8277,9 @@ h1, h2, h3, h4, h5,
 
 .appointment {
   padding: 20px !important; }
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     .appointment {
-      padding: 10% 12% 10% 5% !important; } }
+      padding: 10% 12% 10% 5% !important; } } */
   .appointment h3 {
     color: #fff;
     font-weight: 900;
