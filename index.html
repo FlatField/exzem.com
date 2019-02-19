@@ -47,7 +47,26 @@
 </script>
   </head>
   <body>
-    <!--#include virtual="/SSI/header/header.html" -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand py-2 px-4" href="index.html"><img src="images/exzem_logo_normal.png" style="width:150px;" alt="EXZEM"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+          <span>MENU</span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="#" class="nav-link">ホーム</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">各種プログラム</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">料金</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">トレーナーの紹介</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">お客様の声</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">店舗情報</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- END nav -->
 
     <section class="home-slider js-fullheight owl-carousel ftco-degree-bottom">
@@ -508,32 +527,38 @@
     			</div>
 	    		<div class="col-md-6 appointment ftco-animate">
 	    			<h3 class="mb-3">ご予約</h3>
-	    			<form action="https://docs.google.com/forms/d/e/1FAIpQLSdIrAZE2UnYzY7967S4HVU1dhwY30XiRFnkJkMA2cKlQGSIMA/formResponse?embedded=true" class="appointment-form">
+	    			<form method="post" action="https://script.google.com/macros/s/AKfycbzNrkCHVMGf9HeKtDYiDv3zaO8YrkpSIy5inkt14pxun8j8TCE/exec" class="appointment-form">
 	    				<div class="d-md-flex">
 		    				<div class="form-group">
-		    					<input name="entry.2005620554" type="text" class="form-control" placeholder="名前">
+		    					<input name="name" type="text" class="form-control" placeholder="名前">
 		    				</div>
 	    				</div>
 	    				<div class="d-md-flex">
 		    				<div class="form-group">
 		    					<div class="input-wrap">
 		            		<div class="icon"><span class="ion-md-calendar"></span></div>
-		            		 <input name="entry.1166974658" type="date" class="form-control" placeholder="予約日">
+		            		 <input name="schedule" type="date" class="form-control" placeholder="予約日">
 	            		  </div>
 		    				</div>
 		    				<div class="form-group ml-md-4">
 		    					<div class="input-wrap">
 		            		<div class="icon"><span class="ion-ios-clock"></span></div>
-		            		<input name="entry.839337160" type="text" class="form-control" placeholder="希望時間">
+		            		<input name="times1" type="text" class="form-control" placeholder="希望時間１">
+	            		</div>
+		    				</div>
+                <div class="form-group ml-md-4">
+		    					<div class="input-wrap">
+		            		<div class="icon"><span class="ion-ios-clock"></span></div>
+		            		<input name="times2" type="text" class="form-control" placeholder="希望時間２">
 	            		</div>
 		    				</div>
 		    				<div class="form-group ml-md-4">
-		    					<input name="entry.1045781291" type="text" class="form-control" placeholder="電話番号">
+		    					<input name="tel" type="text" class="form-control" placeholder="電話番号">
 		    				</div>
 	    				</div>
 	    				<div class="d-md-flex">
 	    					<div class="form-group">
-		              <textarea name="entry.224345866" id="" cols="30" rows="5" class="form-control" placeholder="ご質問/事前の連絡"></textarea>
+		              <textarea name="comment" id="" cols="30" rows="5" class="form-control" placeholder="ご質問/事前の連絡"></textarea>
 		            </div>
 		            <div class="form-group ml-md-4">
 		              <input type="submit" value="仮予約をする" class="btn btn-primary py-3 px-4">
