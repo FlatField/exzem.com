@@ -7984,7 +7984,7 @@ h1, h2, h3, h4, h5,
     overflow: visible;
     width: 50%;
     height: 80px;
-    z-index: 0;
+    z-index: -10;
     -webkit-transform: skewY(-5deg);
     -moz-transform: skewY(-5deg);
     -ms-transform: skewY(-5deg);
